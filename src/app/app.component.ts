@@ -10,23 +10,31 @@ import { MessageService } from 'primeng/api';
 export class AppComponent {
   
   data: any;
+  options: any;
 
     constructor() {
+      this.options = {
+            /*title: {
+                display: true,
+                text: 'My Title',
+                fontSize: 16
+            },*/
+          //  legend: {
+            //    position: 'bottom'
+            //}
+        };
         this.data = {
-            labels: ['A','B','C'],
+           // labels: ['A','B','C'],
             datasets: [
                 {
-                    data: [300, 50, 100],
+                    data: [80, 20],
                     backgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
+                      "#36A2EB",
+                        "#d4d2cd",
+                        
+                      
                     ],
-                    hoverBackgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
-                    ]
+                   
                 }]    
             };
     }
